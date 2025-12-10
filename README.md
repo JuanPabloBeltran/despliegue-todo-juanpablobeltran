@@ -44,7 +44,7 @@ Ejemplo de JSON creado:
 
 Clona el repositorio:
 
-git clone https://github.com/sebastianmanriquetorres/todo_list.git
+git clone https://github.com/JuanPabloBeltran/back-todo-juanpablobeltran.git
 cd todo_list/backend
 
 
@@ -79,8 +79,8 @@ Railway deploya automáticamente
 
 ## Autor
 
-Desarrollado por Sebastián Manrique como práctica de desarrollo Full Stack.
+Desarrollado por Juan Pablo Beltran Rodriguez como práctica de desarrollo Full Stack.
 
 GitHub: https://github.com/JuanPabloBeltran/despliegue-todo-juanpablobeltran.git
-Netlifly: https://proyecto-sebastian-manrique.netlify.app
+Netlifly: https://proyecto-juanbeltran.netlify.app/
 Render: https://bd-practicas-despliegue.onrender.com/
