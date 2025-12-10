@@ -1,0 +1,19 @@
+.task-row { display:flex; align-items:flex-start; gap:12px; padding:14px; border-radius:12px; border:1px solid var(--muted-border); background:var(--panel); box-shadow:var(--shadow-soft) }
+.task-row + .task-row { margin-top:12px }
+.task-row.done { opacity:0.7; filter:grayscale(0.06); border-left:4px solid var(--accent-2) }
+.left-area { display:flex; gap:12px; align-items:flex-start; flex:1 }
+.left-area input[type="checkbox"]{ width:20px; height:20px; accent-color:var(--accent) }
+.meta .title{ font-weight:700; color:var(--text); font-size:var(--fz-md) }
+.meta .desc{ color:var(--subtext); font-size:0.95rem; margin-top:4px }
+.meta .date{ color:var(--subtext); font-size:0.78rem; margin-top:6px }
+.actions{ display:flex; gap:8px; align-items:center }
+.btn-edit, .btn-del{ background:transparent; border:none; cursor:pointer; padding:8px; border-radius:50%; color:var(--accent-2); transition:var(--transition); width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center }
+.btn-edit{ background: rgba(251,146,60,0.06) }
+.btn-edit:hover{ transform:translateY(-3px); box-shadow:var(--shadow-soft) }
+.btn-del{ color:var(--danger); background: rgba(239,68,68,0.06) }
+.btn-del:hover{ transform:translateY(-3px); box-shadow:var(--shadow-soft) }
+.edit-form{ display:flex; flex-direction:column; gap:0.6rem }
+.edit-in{ padding:0.6rem 0.8rem; border-radius:10px; border:1px solid var(--muted-border); background:var(--muted); color:var(--text) }
+.edit-actions{ display:flex; gap:8px; justify-content:flex-end }
+.btn-save{ background:linear-gradient(90deg,var(--btn), #ff9a5a); color:#fff; padding:8px 10px; border-radius:10px; border:none }
+.btn-cancel{ background:transparent; border:1px solid var(--muted-border); color:var(--subtext); padding:8px 10px; border-radius:10px }

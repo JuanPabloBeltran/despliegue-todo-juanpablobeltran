@@ -1,0 +1,33 @@
+:root {
+  --app-font: 'Roboto Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, 'Segoe UI Mono', 'Roboto', monospace;
+  --bg: #cfeeff;            /* azul cielo más marcado */
+  --panel: #e8f9ec;         /* tarjetas: verde claro suave */
+  --muted: #f2fbf6;         /* superficies ligeras con tinte verde */
+  --accent: #0284c7;        /* azul profundo para acentos */
+  --accent-2: #fb6f35;      /* naranja secundario para botones */
+  --btn: #ff7a3d;           /* naranja botones (principal) */
+  --text: #0b1720;          /* texto principal oscuro */
+  --subtext: #56606a;       /* texto secundario */
+  --muted-border: rgba(11,23,32,0.06);
+  --radius: 12px;
+  --shadow-soft: 0 8px 24px rgba(15,23,36,0.06);
+  --shadow-strong: 0 16px 48px rgba(15,23,36,0.08);
+  --transition: 180ms cubic-bezier(.2,.9,.3,1);
+  font-family: var(--app-font);
+}
+
+/* Reset y base */
+* { box-sizing: border-box; }
+html,body,#root { height:100%; }
+body { margin:0; background:linear-gradient(180deg,var(--bg),#f2fbff); color:var(--text); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
+
+/* Elementos form básicos, estilizados para coherencia */
+button, input, textarea { font-family: inherit; color:var(--text); }
+
+button { cursor:pointer }
+
+/* Enfocar inputs */
+input:focus, textarea:focus, button:focus { outline:2px solid transparent; box-shadow:0 0 0 5px rgba(2,132,199,0.08); border-radius:var(--radius) }
+
+/* Aplicar fuente globalmente */
+body, input, textarea, button { font-family: var(--app-font); }

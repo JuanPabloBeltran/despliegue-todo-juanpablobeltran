@@ -1,0 +1,8 @@
+.tasks-list { display:grid; grid-template-columns: 1fr; gap:12px }
+.empty-message { font-size:1.05rem; color:var(--subtext); font-style:italic; padding:1rem }
+.tasks-list .task-row { border-left: 4px solid transparent }
+.tasks-list .task-row.done { border-left-color: var(--accent-2) }
+
+@media (min-width: 1100px) {
+	.tasks-list { grid-template-columns: 1fr 1fr; gap:16px }
+}
