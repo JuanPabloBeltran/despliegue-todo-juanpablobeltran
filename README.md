@@ -1,86 +1,145 @@
 # To-Do List – Gestión de Tareas Full Stack
 
-Este proyecto es una aplicación Full Stack para la gestión de tareas, donde los usuarios pueden crear, listar, marcar como completadas, editar y eliminar tareas.
-El backend está construido con Node.js + Express y utiliza PostgreSQL como base de datos alojada en Railway.
 
-Tecnologías Utilizadas
-Área	Tecnologías
-Backend	Node.js, Express, CORS, Dotenv, PostgreSQL
-Base de Datos	PostgreSQL en Railway
-Frontend (Pendiente)	HTML, CSS, JavaScript o React
-Control de Versiones	Git + GitHub
-Deployment	Railway
+## 📌 Descripción del Proyecto
 
---- 
+Este repositorio contiene el **Frontend** de la aplicación **To-Do List**, una interfaz web que permite a los usuarios gestionar sus tareas de manera sencilla e intuitiva.
 
-## Variables de Entorno (Railway / .env.local)
+El frontend consume una **API REST** desarrollada con Node.js y Express, permitiendo:
 
-Debes crear un archivo .env.local o variables en Railway con las siguientes claves:
+* Crear tareas
+* Listar tareas
+* Marcar tareas como completadas
+* Editar tareas
+* Eliminar tareas
 
-DB_HOST=tramway.proxy.rlwy.net
-DB_USER=root
-DB_PASSWORD=AXTxLbdYRDhKbCjCcGiuiLkjuWwmuglD
-DB_NAME=railway
-DB_PORT=35810
+La aplicación se encuentra desplegada en **Netlify** y se comunica con el backend desplegado en la nube.
 
 ---
 
-## Endpoints de la API
-Método	Endpoint	Descripción
-GET	/tasks	Obtener todas las tareas
-POST	/tasks	Crear nueva tarea { title: "" }
-PUT	/tasks/:id/complete	Marcar tarea como completada
-DELETE	/tasks/:id	Eliminar una tarea
+## 🧰 Tecnologías Utilizadas
 
-Ejemplo de JSON creado:
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* **Fetch API** (consumo del backend)
+* **Netlify** (despliegue)
+* **Git & GitHub**
 
-{
-  "id": 1,
-  "title": "Mi primera tarea",
-  "completed": false
-}
+---
 
-## Cómo Ejecutar el Backend Localmente
+## 🗂️ Estructura del Proyecto
 
-Clona el repositorio:
+```
+frontend/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+```
 
-git clone https://github.com/JuanPabloBeltran/back-todo-juanpablobeltran.git
-cd todo_list/backend
+---
 
+## ⚙️ Requisitos Previos
 
-Instala dependencias:
+Para ejecutar este proyecto necesitas:
 
-npm install
+* Navegador web moderno
+* Git
+* Backend en funcionamiento (local o en producción)
 
+---
 
-Crea tu archivo .env.local y agrega tus credenciales.
+## 🔗 Conexión con el Backend
 
-Ejecuta el servidor:
+El frontend se conecta a la API REST del backend mediante **fetch**.
 
-npm run dev
+Ejemplo de URL del backend:
 
-## Deploy en Railway
+```
+https://bd-practicas-despliegue.onrender.com
+```
 
-El backend está configurado para funcionar automáticamente con las variables de entorno.
+Desde el archivo `script.js` se realizan las peticiones HTTP a los distintos endpoints.
 
-Solo necesitas:
+---
 
-Conectar el repositorio
+## 🌐 Endpoints Consumidos
 
-Agregar las variables de entorno
+* `GET /tasks` → Obtener todas las tareas
+* `POST /tasks` → Crear una nueva tarea
+* `PUT /tasks/:id/complete` → Marcar tarea como completada
+* `PUT /tasks/:id` → Editar tarea
+* `DELETE /tasks/:id` → Eliminar tarea
 
-Railway deploya automáticamente
+---
 
-## Próximos pasos
+## ▶️ Ejecución en Local
 
-- Crear interfaz web (frontend)
-- Conectar el frontend con el backend mediante fetch/axios
-- Estilizar con CSS o frameworks (Tailwind/Bootstrap)
+### 1️⃣ Clonar el repositorio
 
-## Autor
+```
+git clone https://github.com/JuanPabloBeltran/despliegue-todo-juanpablobeltran.git
+```
 
-Desarrollado por Juan Pablo Beltran Rodriguez como práctica de desarrollo Full Stack.
+### 2️⃣ Acceder al proyecto
 
-GitHub: https://github.com/JuanPabloBeltran/despliegue-todo-juanpablobeltran.git
-Netlifly: https://proyecto-juanbeltran.netlify.app/
-Render: https://bd-practicas-despliegue.onrender.com/
+```
+cd despliegue-todo-juanpablobeltran
+```
+
+### 3️⃣ Ejecutar el frontend
+
+Puedes abrir directamente el archivo `index.html` en tu navegador o usar una extensión como **Live Server**.
+
+---
+
+## ☁️ Despliegue en Netlify
+
+El frontend está desplegado en **Netlify**.
+
+Proceso de despliegue:
+
+1. Conectar el repositorio a Netlify
+2. Seleccionar la carpeta raíz del proyecto
+3. Netlify realiza el deploy automáticamente
+
+🌐 **Sitio en producción:**
+
+[https://proyecto-juanbeltran.netlify.app/](https://proyecto-juanbeltran.netlify.app/)
+
+---
+
+## 📌 Estado del Proyecto
+
+* ✅ Interfaz funcional
+* ✅ Conexión con API REST
+* ✅ Despliegue en producción
+* 🔄 Posibles mejoras visuales
+
+---
+
+## 🚀 Próximas Mejoras
+
+* Mejorar diseño y experiencia de usuario
+* Agregar validaciones en formularios
+* Manejo visual de errores
+* Implementar frameworks CSS (Bootstrap / Tailwind)
+* Migrar a React
+
+---
+
+## 👨‍💻 Autor
+
+Desarrollado por **Juan Pablo Beltran Rodriguez** como práctica de **Desarrollo Full Stack**.
+
+🔗 **Repositorio Frontend:**
+[https://github.com/JuanPabloBeltran/despliegue-todo-juanpablobeltran.git](https://github.com/JuanPabloBeltran/despliegue-todo-juanpablobeltran.git)
+
+🔗 **Repositorio Backend:**
+[https://github.com/JuanPabloBeltran/back-todo-juanpablobeltran.git](https://github.com/JuanPabloBeltran/back-todo-juanpablobeltran.git)
+
+☁️ **API en Producción:**
+[https://bd-practicas-despliegue.onrender.com/](https://bd-practicas-despliegue.onrender.com/)
+
